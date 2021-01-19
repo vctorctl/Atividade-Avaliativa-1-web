@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da Página -->
+    <title>Trabalho de Web 1</title>
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      
+      <div class="navbar">
+        <h2>Trabalho </h2><h1>web </h1>
+      
+        <h1> </h1>
+        <h1> </h1>
+        <button class="button1" onclick="mudarCor('#F08B8B')">#vermelho</button>
+        <button class="button2" onclick="mudarCor('#8BCBF0')">#azul</button>
+        <button class="button3" onclick="mudarCor('#D08BF0')">#rosa</button>
+        <button onclick="mudarCor('#FFFFFF')">#branco</button>
+      </div>
+    </header>
+
+    <section>
+      <h1 class="titulo">
+        Deixe sua mensagem!
+      </h1>
+
+      <div class="conteudo">
+        <div>
+          <div style="margin: 10px">
+            <label>Nome</label>
+            <input type="text" id="nome" />
+          </div>
+          <div style="margin: 10px">
+            <label>Mensagem</label>
+            <input type="text" id="mensagem" />
+          </div>
+          <button class="enviar" onclick="enviarMensagem()">Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <ul id="quadro"></ul>
+    </section>
+
+    <footer>
+      <div>
+        <button onclick="exibirCreditos()">Créditos</button>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
